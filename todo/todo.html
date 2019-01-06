@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./todo.css" />
+        <script type="text/javascript" src="todo.js"></script>
+        <title>Todo App</title>
+    </head>
+    <body onload="loadDocument()">
+        <div id="header" class="col-header">
+            <h2>Simple Todo Application</h2>
+        </div>
+        <div id="body">
+            <div id="side-nav" class="col-side-nav">
+                <ul>
+                    <li><a href="./todo.html">Home</a></li>
+                </ul>
+            </div>
+            <div id="content" class="col-content">
+                <div id="form">
+                    <input placeholder="Enter a task" type="text" id="input" />
+                    <button id="add-item-button" onclick="addItem(document.getElementById('input').value);">Add</button>
+                </div>
+                <div id="todos">
+                    <h3>List of to do items</h3>
+                    <ul id="list"></ul>
+                    <div id="empty-list-text"></div>
+                    <button id="clear-all-button" onclick="clearAll();">Clear All</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
